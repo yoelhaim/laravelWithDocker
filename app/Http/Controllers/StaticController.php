@@ -16,13 +16,31 @@ class StaticController extends Controller
         // $user = request('id');;
 
 
-        $user = [
-            'name' => 'John Doe',
-            'age' => 30,
-            'hobbies' => ['Soccer', 'Video Games']
+        $users = [
+            '0' => [
+                'name' => 'Youssef el haimer',
+                'age' => 25,
+                'city' => 'Khouribga'
+            ],
+            '1' => [
+                'name' => 'youmer',
+                'age' => 30,
+                'city' => 'London'
+            ],
+            '2' => [
+                'name' => 'youssef',
+                'age' => 20,
+                'city' => 'Paris'
+            ],
+            '3' => [
+                'name' => 'el h',
+                'age' => 200,
+                'city' => 'Amrica'
+            ],
         ];
+
         return  view('test', [
-            'user' => $user
+            'user' => $users
         ]);
     }
 
